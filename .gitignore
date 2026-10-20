@@ -1,0 +1,19 @@
+
+# Java and Maven
+backend/target/
+
+# Node.js and React
+frontend/node_modules/
+frontend/dist/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# IDE settings
+.idea/
+.vscode/
+
+# Log files
+*.log
