@@ -1,6 +1,5 @@
 package com.tripwarroom.backend.user;
 
-import jakarta.persistence.CollectionTable;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
@@ -12,7 +11,7 @@ import java.util.Set;
 @Table(name = "users")
 public class User {
     @Id 
-    @GenerationValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column (nullable = false, unique = true ,length = 255)
     private String email;
